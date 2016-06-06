@@ -84,15 +84,4 @@ public abstract class GameShapes {
 	abstract void draw(JPanel panel, Graphics g); 
 	abstract void move(JPanel panel);
 	
-	public void collision(GameShapes s, GameShapes g) {
-		if ((s.getWidth()+s.getX()) == (g.getWidth()+g.getX()) && (s.getHeight()+s.getY() == (g.getHeight()+g.getY()))) {
-			setdx(-getSpeed());
-			setdy(-getSpeed());
-		}
-		
-		
-		
-		setX(getX() + getdx());
-		setY(getY()+getdy());
-	}
 }
